@@ -1,11 +1,7 @@
-import type {ReactNode} from "react";
+import {Outlet} from "react-router";
 
-type PrivateRouteProps = {
-    children?: ReactNode;
-}
-
-const PrivateRoute = ({ children }: PrivateRouteProps) => {
-    return <>{children}</>
+const PrivateRoute = () => {
+    return <Outlet />
 }
 
 export default PrivateRoute;
