@@ -1,7 +1,7 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query";
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: import.meta.env.VITE_BASE_URL || 'api',
+    baseUrl: import.meta.env.VITE_BASE_URL || '/api',
     credentials: "include",
     responseHandler: async response => {
         const contentType = response.headers.get('content-type');
