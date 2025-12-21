@@ -2,6 +2,7 @@
 node_modules
 .eslintignore
 .gitignore
+.husky
 LICENSE
 build
 dist
